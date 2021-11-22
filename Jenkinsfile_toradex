@@ -24,7 +24,7 @@ pipeline {
         CQFD_EXTRA_RUN_ARGS = "\
             -v ${YOCTO_CACHE_DIR}/dl:/mnt/dl \
             -e DL_DIR=/mnt/dl \
-            -v ${YOCTO_CACHE_DIR}/sstate:/mnt/sstate \ 
+            -v ${YOCTO_CACHE_DIR}/sstate:/mnt/sstate \
             -e SSTATE_DIR=/mnt/sstate"
         GIT_SSH_COMMAND = "ssh -o StrictHostKeyChecking=no"
         ANSIBLE_HOST_KEY_CHECKING = "False"
